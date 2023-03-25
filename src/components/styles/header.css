@@ -4,13 +4,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: radial-gradient(circle, #fff 5%, #777 5%, #777 10%);
+    background-size: 25px 25px;
 }
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #28f;
+    background: linear-gradient(to bottom, #FFE6B3, #FFC299);
 }
 
 .navbar .navbarBranch {
@@ -27,12 +29,14 @@ body {
     list-style: none;
 }
 
-.navbar .navCategory .navCategory-link{
+.navbar .navCategory .navCategory-link {
     text-decoration: none;
-    background-color: beige;
+    background-image: linear-gradient(to right, #fff 5%, #777 5%, #777 10%);
+    color: #fff;
     padding: 0.5rem;
     border-radius: 0.5rem;
-}
+  }
+  
 
 /* Estilos CartWidget */
 .navbar .cartStyle {
