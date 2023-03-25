@@ -1,0 +1,188 @@
+[
+    {
+        "id": 1,
+        "nombre":"Cama Queen Size",
+        "subnombre":"Sueño Perfecto",
+        "descripcion": " Descansa plenamente en esta cama de ensueño, diseñada para brindarte el máximo confort. Con su tamaño Queen Size, podrás disfrutar de un espacio amplio y cómodo para dormir.",
+        "precio":45000,
+        "categoria":"dormitorio",
+        "img": "pileta.jpg"
+
+    },
+    {
+        "id": 2,
+        "nombre": "Armario",
+        "subnombre":"Espacio Extra",
+        "descripcion": "Mantene tu ropa organizadas y bien guardada en este armario con espacio extra. Sus estantes y perchas te permitirán tener todo en orden, sin preocuparte por el espacio",
+        "precio": 32000,
+        "categoria":"dormitorio",
+        "img": "pileta.jpg"
+
+    },
+    {
+        "id": 3,
+        "nombre": "Tocador ",
+        "subnombre":"Belleza Perfecta",
+        "descripcion": "Siéntete como una reina cada vez que te arregles en este tocador elegante y funcional. Sus cajones amplios y su espejo de cuerpo completo te permitirán lucir siempre radiante.",
+        "precio":22000,
+        "categoria":"dormitorio",
+        "img": "pileta.jpg"
+
+    },
+    {   
+        "id":4,
+        "nombre": "Mesita de noche ",
+        "subnombre":"Luz Cálida",
+        "descripcion": "",
+        "precio":8500,
+        "categoria":"dormitorio",
+        "img": "bajo-mesada.jpg" 
+
+    },
+    {   
+        "id":5,
+        "nombre": "Sillón",
+        "subnombre":"Descanso Profundo",
+        "descripcion": "Agrega un toque acogedor a tu habitación con esta mesita de noche. Su luz cálida te permitirá leer un libro o disfrutar de una taza de té antes de dormir.",
+        "precio":18000,
+        "categoria":"dormitorio",
+        "img": "bajo-mesada.jpg"
+
+    },
+    {   
+        "id":6,
+        "nombre": "Mueble de baño",
+        "subnombre":"Espacio Organizado",
+        "descripcion": "Mantén tu baño siempre en orden con este mueble que te ofrece espacio organizado. Sus cajones y puertas te permitirán guardar tus productos de higiene personal y toallas sin ningún problema.",
+        "precio":25000,
+        "categoria":"baño",
+        "img": "bajo-mesada.jpg"
+
+    },
+    {
+        "id":7,
+        "nombre":"Espejo",
+        "subnombre":"Luz Perfecta",
+        "descripcion":"Asegúrate de lucir perfecto con este espejo con luz. La iluminación ajustable te permitirá ver con claridad todos los detalles y dar los toques finales a tu look",
+        "precio":9500,
+        "categoria":"dormitorio",
+        "img": "cama.jpg"
+    },
+    {
+        "id":8,
+        "nombre": "Toallero",
+        "subnombre":"Calidez al Alcance",
+        "descripcion": "Agrega un toque de calidez a tu baño con este toallero. Sus barras calentadoras te permitirán tener siempre toallas secas y cálidas al alcance de tu mano",
+        "precio":5000,
+        "categoria":"baño",
+        "img": "cama.jpg"
+    },
+    {
+        "id":9,
+        "nombre": "Estantería",
+        "subnombre":"Accesible y a la Vista",
+        "descripcion": "Mantén tus productos de cuidado personal accesibles y a la vista con esta estantería. Sus repisas te permitirán organizar tus productos y darle un toque decorativo a tu baño",
+        "precio":12000,
+        "categoria":"baño",
+        "img": "cama.jpg"
+    },
+    {
+        "id":10,
+        "nombre": "Lavabo con mueble",
+        "subnombre":"Estilo y Comodidad",
+        "descripcion": "Agrega estilo y comodidad a tu baño con este lavabo con mueble. Sus amplios cajones y estantes te permitirán almacenar tus productos de higiene personal y accesorios de baño, mientras que su diseño elegante y acabados de alta calidad le darán un toque sofisticado a tu espacio",
+        "precio":32000,
+        "categoria":"baño",
+        "img": "cama.jpg"
+    },
+    {
+        "id":11,
+        "nombre": "Cocina integral",
+        "subnombre":"Cocina de tus Sueños",
+        "descripcion": "Disfruta de una cocina de ensueño con esta cocina integral. Sus acabados de alta calidad y su diseño moderno te permitirán cocinar en un espacio cómodo y funcional",
+        "precio":120000,
+        "categoria":"cocina",
+        "img": "cama.jpg"
+    },
+    {
+        "id":12,
+        "nombre": "Isla de cocina",
+        "subnombre":"Amplia y Funcional",
+        "descripcion": "Agrega espacio y funcionalidad a tu cocina con esta isla. Sus amplias repisas y cajones te permitirán guardar tus utensilios y preparar tus alimentos con comodidad",
+        "precio":38000,
+        "categoria":"cocina",
+        "img": "cama.jpg"
+    },
+    {
+        "id":13,
+        "nombre": "Mesa de comedor",
+        "subnombre":"Reuniones Inolvidables",
+        "descripcion": "Comparte momentos inolvidables con tus seres queridos alrededor de esta mesa de comedor. Su diseño elegante y su tamaño amplio te permitirán disfrutar de tus comidas en un ambiente agradable",
+        "precio":26000,
+        "categoria":"cocina",
+        "img": "cama.jpg"
+    },
+    {
+        "id":14,
+        "nombre": "Sillas de cocina",
+        "subnombre":"Comodidad y Estilo",
+        "descripcion": "Siéntete cómodo y con estilo en estas sillas de cocina. Su diseño ergonómico y su tapizado de alta calidad te permitirán disfrutar de tus comidas en un ambiente acogedor",
+        "precio":6500,
+        "categoria":"cocina",
+        "img": "cama.jpg"
+    },
+    {
+        "id":15,
+        "nombre": "Vitrina",
+        "subnombre":"Exhibe tus Tesoros",
+        "descripcion": "Muestra tus platos y vajillas favoritos en esta vitrina elegante y funcional. Sus repisas de vidrio y su iluminación te permitirán exhibir tus tesoros culinarios con estilo",
+        "precio":18000,
+        "categoria":"cocina",
+        "img": "cama.jpg"
+    },
+    {
+        "id":16,
+        "nombre": "Sofá",
+        "subnombre":"Relax Total",
+        "descripcion": "Disfruta del máximo confort en este sofá con asientos reclinables y apoya pies extensibles. Su diseño elegante y su tapizado de alta calidad te permitirán disfrutar de tus películas y series favoritas con estilo",
+        "precio":45000,
+        "categoria":"living",
+        "img": "cama.jpg"
+    },
+    {
+        "id":17,
+        "nombre": "Mesa de centro",
+        "subnombre":"Elegancia en tu Sala",
+        "descripcion": "Agrega un toque de elegancia a tu sala de estar con esta mesa de centro. Su diseño moderno y sus acabados de alta calidad te permitirán disfrutar de tus reuniones con amigos y familiares con estilo",
+        "precio":14000,
+        "categoria":"living",
+        "img": "cama.jpg"
+    },
+    {
+        "id":18,
+        "nombre": "Sillón ",
+        "subnombre":"Comodidad con Estilo",
+        "descripcion": "Siéntete cómodo y con estilo en este sillón. Su diseño ergonómico y su tapizado de alta calidad te permitirán disfrutar de tus momentos de lectura o descanso en un ambiente acogedor",
+        "precio":28000,
+        "categoria":"living",
+        "img": "cama.jpg"
+    },
+    {
+        "id":19,
+        "nombre": "Estantería ",
+        "subnombre":"Organización y Estilo",
+        "descripcion": "Mantén tu sala de estar organizada y con estilo con esta estantería. Sus amplias repisas te permitirán exhibir tus libros, adornos y objetos favoritos, mientras le das un toque decorativo a tu espacio",
+        "precio":16000,
+        "categoria":"living",
+        "img": "cama.jpg"
+    },
+    {
+        "id":20,
+        "nombre": "Lámpara de pie",
+        "subnombre":"Ambiente Cálido",
+        "descripcion": "Agrega un ambiente cálido y acogedor a tu sala de estar con esta lámpara de pie. Su iluminación ajustable te permitirá crear un ambiente de relajación y confort en tus momentos de descanso y entretenimiento",
+        "precio":8500,
+        "categoria":"living",
+        "img": "cama.jpg"
+    }
+]
