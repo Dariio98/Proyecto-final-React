@@ -10,6 +10,11 @@ const ItemList = () => {
     const URL = './stock.json';
     const filterProducts = products.filter(product => product.categoria === name);
 
+    const handlerAddCart = (event) => {
+        console.log(event.target)
+    }
+
+
     useEffect(() => {
     const getProducts = async () => {
         try {
@@ -34,9 +39,12 @@ const ItemList = () => {
                 <div className="cardProducts-text">
                 <h2 className="cardProducts-title">{product.nombre}</h2>
                 <p className="cardProducts-price">{product.precio}</p>
+                <div className='cardProducts-button'>
+                    <button onClick={handlerAddCart}>Agregar al carrito</button>
                 <Link to={`/product/${product.id}`}>
-                    <button className="cardProducts-buttom">Detalles</button>
+                    <button>Detalles</button>
                 </Link>
+                </div>
                 </div>
             </div>
             )
@@ -47,9 +55,12 @@ const ItemList = () => {
                 <div className="cardProducts-text">
                 <h2 className="cardProducts-title">{product.nombre}</h2>
                 <p className="cardProducts-price">${product.precio}</p>
-                <Link to={`/product/${product.id}`}>
-                    <button className="cardProducts-buttom">Detalles</button>
-                </Link>
+                    <div className="cardProducts-button">
+                        <button onClick={handlerAddCart}>Agregar al carrito</button>
+                                        <Link to={`/product/${product.id}`}>
+                        <button>Detalles</button>
+                                        </Link>
+                    </div>
                 </div>
             </div>
             )

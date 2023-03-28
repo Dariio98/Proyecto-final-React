@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/itemDetailContainer.css"
 import { Link } from "react-router-dom";
+import { ItemCount } from "./ItemCount";
 
 export const ItemDetali = ({ product }) => {
 return (
@@ -11,11 +12,15 @@ return (
     />
     <div className="detailProducts-text">
         <h2 className="detailProducts-title">{product.nombre}</h2>
-        <p className="detailProducts-description">{product.descripcion}</p>
+        <p className="detailProducts-description">{product.descripcion }</p>
         <p className="detailProducts-price">${product.precio}</p>
-        <Link to={"/"}>
-        <button className="cardProducts-buttom">Volver a la tienda</button>
-        </Link>
+        <ItemCount />
+        <div className="detailProducts-button">
+            <button>Agregar al carrito</button>
+            <Link to={"/"}>
+            <button className="cardProducts-buttom">Volver a la tienda</button>
+            </Link>
+        </div>
     </div>
     </div>
 );
