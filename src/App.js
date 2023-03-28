@@ -4,20 +4,23 @@ import Cart from "./components/header/Cart"
 import ItemListContainer from "./components/main/ItemListContainer";
 import ItemDetailContainer from "./components/main/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CustomProvider } from "./context/CartProductContext";
 
 
 
 function App() {
   return (
     <BrowserRouter>
-    <Header />
+      <CustomProvider>
+        <Header />       
+        < Routes>
+          <Route path='/' element={ <ItemListContainer />}/>
+              <Route path='/categoria/:name' element= {<ItemListContainer />}/>
+              <Route path='/Cart' element={<Cart />}/>
+              <Route path='/product/:id' element={<ItemDetailContainer />} />
+        </Routes>
+      </CustomProvider>
 
-    < Routes>
-    <Route path='/' element={ <ItemListContainer />}/>
-        <Route path='/categoria/:name' element= {<ItemListContainer />}/>
-        <Route path='/Cart' element={<Cart />}/>
-        <Route path='/product/:id' element={<ItemDetailContainer />} />
-    </Routes>
     </BrowserRouter>
   );
 }

@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/itemDetailContainer.css"
 import { Link } from "react-router-dom";
 import { ItemCount } from "./ItemCount";
+import { CartProductContext } from "../../context/CartProductContext"
 
 export const ItemDetali = ({ product }) => {
+    const { addProduct } = useContext(CartProductContext)
+
+    const addProductCart = (count) => {
+        console.log(product, count);
+        addProduct(product, count);
+    }
 return (
     <div key={product.id} className="datailProducts">
     <img
@@ -14,9 +21,8 @@ return (
         <h2 className="detailProducts-title">{product.nombre}</h2>
         <p className="detailProducts-description">{product.descripcion }</p>
         <p className="detailProducts-price">${product.precio}</p>
-        <ItemCount />
-        <div className="detailProducts-button">
-            <button>Agregar al carrito</button>
+        <ItemCount addProductCart={addProductCart} />
+        <div className="detailProducts-button">           
             <Link to={"/"}>
             <button className="cardProducts-buttom">Volver a la tienda</button>
             </Link>

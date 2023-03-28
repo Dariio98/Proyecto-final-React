@@ -1,7 +1,8 @@
-import React, { useEffect, useState} from 'react'
+import React, { useEffect, useState, useContext} from 'react'
 import '../styles/main.css'
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
+import { CartProductContext } from "../../context/CartProductContext"
 
 
 const ItemList = () => {
@@ -9,9 +10,12 @@ const ItemList = () => {
     const { name } = useParams();
     const URL = './stock.json';
     const filterProducts = products.filter(product => product.categoria === name);
+    const { addProduct } = useContext(CartProductContext)
+
 
     const handlerAddCart = (event) => {
         console.log(event.target)
+        addProduct();
     }
 
 
@@ -30,7 +34,8 @@ const ItemList = () => {
     }, []);
 
     return (
-    <>
+        //Verificacion de categoria} 
+        <>
         {products.length ? (
         name ? (
             filterProducts.map((product) =>
