@@ -13,9 +13,9 @@ const ItemList = () => {
     const { addProduct } = useContext(CartProductContext)
 
 
-    const handlerAddCart = (event) => {
+    const handlerAddCart = (event, product, cant) => {
         console.log(event.target)
-        addProduct();
+        addProduct(product, cant);
     }
 
 
@@ -45,7 +45,7 @@ const ItemList = () => {
                 <h2 className="cardProducts-title">{product.nombre}</h2>
                 <p className="cardProducts-price">{product.precio}</p>
                 <div className='cardProducts-button'>
-                    <button onClick={handlerAddCart}>Agregar al carrito</button>
+                <button onClick={(event) => handlerAddCart(event, product, 1)}>Agregar al carrito</button>
                 <Link to={`/product/${product.id}`}>
                     <button>Detalles</button>
                 </Link>
@@ -61,7 +61,7 @@ const ItemList = () => {
                 <h2 className="cardProducts-title">{product.nombre}</h2>
                 <p className="cardProducts-price">${product.precio}</p>
                     <div className="cardProducts-button">
-                        <button onClick={handlerAddCart}>Agregar al carrito</button>
+                    <button onClick={(event) => handlerAddCart(event, product, 1)}>Agregar al carrito</button>
                                         <Link to={`/product/${product.id}`}>
                         <button>Detalles</button>
                                         </Link>
