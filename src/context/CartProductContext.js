@@ -24,8 +24,9 @@ export const CustomProvider = ({ children }) => {
     }
 
     const removeProduct = (id) => {
-        setCart(cart.filter((product) => product.id === id))
+        setCart(cart.filter((product) => product.id !== product.id))
     }
+    
     const isInCart = (id) => {return cart.some((product) => product.id === id)}
 
     const clear = () => {

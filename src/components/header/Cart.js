@@ -8,8 +8,7 @@ const Cart = () => {
 const { cart, removeProduct } = useContext(CartProductContext)
 
 
-const handlerRemove = (product, event) => {
-    console.log(event);
+const handlerRemove = (product) => {
     removeProduct(product)
 }
 return (
